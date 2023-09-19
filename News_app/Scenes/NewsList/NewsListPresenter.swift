@@ -11,6 +11,7 @@ protocol NewsListProtocol: AnyObject {
     func setupNavigationbar()
     func setupViwes()
     func endRefreshing()
+	func moveToNewsWebViewController()
 }
 
 class NewsListPresenter: NSObject {
@@ -45,6 +46,9 @@ extension NewsListPresenter: UITableViewDataSource {
 
         return cell
     }
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		viewController?.moveToNewsWebViewController()
+	}
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 		guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: NewsListTableViewHeaderView.identifier) as? NewsListTableViewHeaderView else { return UIView() }
