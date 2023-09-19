@@ -2,13 +2,13 @@
 //  News_appTests.swift
 //  News_appTests
 //
-//  Created by deepvisions on 2023/09/19.
+//  Created by terry on 2023/09/19.
 //
 
 import XCTest
 @testable import News_app
 
-final class News_appTests: XCTestCase {
+final class NewsAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

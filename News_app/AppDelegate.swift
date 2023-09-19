@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  News_app
 //
-//  Created by deepvisions on 2023/09/19.
+//  Created by terry on 2023/09/19.
 //
 
 import UIKit

@@ -2,12 +2,12 @@
 //  News_appUITestsLaunchTests.swift
 //  News_appUITests
 //
-//  Created by deepvisions on 2023/09/19.
+//  Created by terry on 2023/09/19.
 //
 
 import XCTest
 
-final class News_appUITestsLaunchTests: XCTestCase {
+final class NewsAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

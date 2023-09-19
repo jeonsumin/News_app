@@ -2,20 +2,15 @@
 //  News_appUITests.swift
 //  News_appUITests
 //
-//  Created by deepvisions on 2023/09/19.
+//  Created by terry on 2023/09/19.
 //
 
 import XCTest
 
-final class News_appUITests: XCTestCase {
+final class NewsAppUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
