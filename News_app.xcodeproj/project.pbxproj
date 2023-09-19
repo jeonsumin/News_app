@@ -202,6 +202,7 @@
 				76E66B0C2AB93A0F000EF7E8 /* Frameworks */,
 				76E66B0D2AB93A0F000EF7E8 /* Resources */,
 				76FE631A2AB93B3800DF3C30 /* SwiftLint */,
+				CCC8588D74EBBE570CF06040 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +244,7 @@
 				76E66B2B2AB93A10000EF7E8 /* Sources */,
 				76E66B2C2AB93A10000EF7E8 /* Frameworks */,
 				76E66B2D2AB93A10000EF7E8 /* Resources */,
+				7FDFFA118E50625354FA7FFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,8 +289,8 @@
 			);
 			mainGroup = 76E66B062AB93A0E000EF7E8;
 			packageReferences = (
-				76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 76E66B102AB93A0F000EF7E8 /* Products */;
 			projectDirPath = "";
@@ -389,6 +391,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		7FDFFA118E50625354FA7FFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-News_app-News_appUITests/Pods-News_app-News_appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-News_app-News_appUITests/Pods-News_app-News_appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-News_app-News_appUITests/Pods-News_app-News_appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC8588D74EBBE570CF06040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-News_app/Pods-News_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-News_app/Pods-News_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-News_app/Pods-News_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D68D6014E19BAD1A8771E109 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -765,7 +801,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -773,7 +809,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -786,12 +822,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		76E66B432AB93A54000EF7E8 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 76E66B422AB93A54000EF7E8 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 		76E66B462AB93A67000EF7E8 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 76E66B452AB93A67000EF7E8 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

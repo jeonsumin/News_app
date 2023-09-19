@@ -17,5 +17,6 @@ target 'News_app' do
   end
 
 pod 'SwiftLint'
+pod 'TTGTagCollectionView'
 
 end
