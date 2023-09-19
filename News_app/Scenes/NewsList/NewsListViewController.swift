@@ -15,7 +15,7 @@ class NewsListViewController: UIViewController {
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(didCalledRefresh), for: .valueChanged)
-        
+
         return refreshControl
     }()
 
@@ -23,7 +23,11 @@ class NewsListViewController: UIViewController {
         let tableView = UITableView()
         tableView.delegate = presenter
         tableView.dataSource = presenter
-        tableView.register(NewsListTableViewCell.self, forCellReuseIdentifier: NewsListTableViewCell.identifier)
+        tableView.register(NewsListTableViewCell.self,
+                           forCellReuseIdentifier: NewsListTableViewCell.identifier)
+        tableView.register(NewsListTableViewHeaderView.self,
+                           forHeaderFooterViewReuseIdentifier: NewsListTableViewHeaderView.identifier)
+
         tableView.refreshControl = refreshControl
 
         return tableView

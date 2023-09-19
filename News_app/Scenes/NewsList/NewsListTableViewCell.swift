@@ -2,7 +2,7 @@
 //  NewsListTableViewCell.swift
 //  News_app
 //
-//  Created by deepvisions on 2023/09/19.
+//  Created by terry on 2023/09/19.
 //
 
 import UIKit
@@ -37,7 +37,7 @@ class NewsListTableViewCell: UITableViewCell {
         setupLayout()
     }
 
-    func setup(){
+    func setup() {
         setupLayout()
 
         accessoryType = .disclosureIndicator
@@ -52,8 +52,6 @@ class NewsListTableViewCell: UITableViewCell {
 
 private extension NewsListTableViewCell {
     func setupLayout() {
-        
-        
         [titleLabel, descriptionLabel, dateLabel].forEach {
             addSubview($0)
         }
